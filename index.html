@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="theme-toggle">
+      <span class="slider round"></span>
+    </label>
+    <span id="theme-label">🌙Dark</span>
+  </div>
+
+  <div class="app">
+    <h2>To-Do List <span>📝</span></h2>
+    <div class="input-box">
+      <input type="text" id="task-input" placeholder="Add your task" />
+      <button id="add-btn">➕ADD</button>
+    </div>
+    <ul id="task-list"></ul>
+
+    <div class="bulk-actions">
+      <button id="clear-completed">🧹 Clear Completed</button>
+      <button id="clear-all">🗑️Clear All</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

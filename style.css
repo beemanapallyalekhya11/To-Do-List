@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #790d72, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s ease;
+}
+
+body.light {
+  background: linear-gradient(to right, #ffffff, #dcdcdc);
+}
+
+.app {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+body.light .app {
+  background: #f9f9f9;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #2a5298;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #2a5298;
+  border-radius: 25px;
+  outline: none;
+}
+
+.input-box button {
+  padding: 10px 20px;
+  background: #ff5e5e;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  background: #f1f1f1;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.6;
+}
+
+ul li span {
+  cursor: pointer;
+  font-weight: bold;
+  color: #ff5e5e;
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+ul li .checkbox {
+  cursor: pointer;
+  margin-right: 10px;
+  height: 16px;
+  width: 16px;
+  border: 2px solid #2a5298;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+
+ul li.checked .checkbox::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #2a5298;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  border-radius: 50%;
+}
+
+.bulk-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.bulk-actions button {
+  padding: 12px 20px;
+  background-color: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(250, 224, 224, 0.859);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
