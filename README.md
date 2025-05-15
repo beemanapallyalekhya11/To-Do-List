@@ -1,7 +1,10 @@
 # To-Do List Application
 
 A simple and interactive To-Do List application built with HTML, CSS, and JavaScript. This app allows users to add tasks, mark tasks as completed, delete tasks, and clear completed tasks or all tasks. Additionally, it features a light/dark theme toggle for better user experience.
+
 ![Screenshot](images/Screenshot.png)
+
+![Screenshot](images/Output.png)
 
 ## Features
 
