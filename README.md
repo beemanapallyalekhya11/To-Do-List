@@ -4,7 +4,7 @@ A simple and interactive To-Do List application built with HTML, CSS, and JavaSc
 
 ![Screenshot](images/Screenshot.png)
 
-![Screenshot](images/Output.png)
+![Screenshot](images/output.png)
 
 ## Features
 
